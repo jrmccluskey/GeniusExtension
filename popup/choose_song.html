@@ -7,20 +7,15 @@
 	</head>
 	<body>
 		<div class="search-input">
-			<form id = "inputForm">
+			<form action='' onSubmit="search()">
 				Artist: <input type="text" name="artist"><br>
 				Song: <input type="text" name="song"><br>
-				<input type="button" onclick="search()" value="Submit">
+				<input type="submit" value="Submit">
 			</form>
 		</div>
 		<script>
 			function search() {
-				var storage = document.getElementById("inputForm");
-				var artist = storage.elements[0].value;
-				var song = storage.elements[1].value;
-				browser.tabs.create({
-					url: "https//genius.com/" + artist + "-" + song + "-lyrics"
-				});
+				alert("Tripped");
 			}
 		</script>
 	</body>
