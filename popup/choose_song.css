@@ -1,0 +1,10 @@
+html, body{
+	width: 300px;
+}
+
+.search-input {
+	width: 100%;
+	padding: 4px;
+	text-align: left;
+	cursor: pointer;
+}
