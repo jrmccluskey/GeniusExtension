@@ -12,7 +12,7 @@
     },
 
     "background": {
-	"scripts": ["authtest.js"]
+	"scripts": ["background.js"]
     },
 
     "omnibox": {
@@ -30,5 +30,10 @@
 	  "38": "icons/icon38.png"
 	},
 	"default_title": "Genius"
-    }
+    },
+
+    "permissions": [
+	"*://api.genius.com/*",
+	"webRequest"	
+    ]
 }
