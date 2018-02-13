@@ -34,6 +34,8 @@
 
     "permissions": [
 	"*://api.genius.com/*",
-	"webRequest"	
+	"webRequest",
+	"activeTab",
+	"tabs"	
     ]
 }
