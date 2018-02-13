@@ -1,4 +1,8 @@
 TODO:
 Look at authentication with Spotify
 Code tie-in with current/last played song
-Remove old popup files
+Modify strings for tab search
+Add contingency for no hits
+
+Completed:
+Removed old popup files
