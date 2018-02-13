@@ -12,15 +12,12 @@
     },
 
     "background": {
-	"scripts": ["background.js"]
+	"scripts": ["authtest.js"]
     },
 
-    "content_scripts": [
-	{
-	    "matches":["*://youtube.com/*"],
-	    "js": ["ytplugin.js"]
-	}
-    ],
+    "omnibox": {
+	"keyword": "genius"
+    },
 
     "icons": {
 	"48": "icons/icon48.png"
