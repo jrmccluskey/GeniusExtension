@@ -25,9 +25,13 @@ function openPage() {
 function onGot(tabInfo) {
     var accessToken = 'ujIM63vP1cZ4ng87QOz7y__YYSnXQzvFBgQnNGLUJpXTs8fb2nSTGFCipbwnnIiu';
     var title = tabInfo[0].title;
+    title  = title.replace("YouTube", "");
+    title = title.replace(" - ", "");
+    console.log(title);
     fetch('https://api.genius.com/search?access_token=' + accessToken + '&q=' + encodeURIComponent(title)).then(function (response) {
         response.json().then(function(data) {
-	    console.log(data.response.hits[0].result.url);
+	   // console.log(data);
+	   // console.log(data.response.hits[0].result.url);
 	    var songPage = data.response.hits[0].result.url;
 	    browser.tabs.create({
 		url: songPage
