@@ -2,6 +2,7 @@ TODO:
 Look at authentication with Spotify
 Code tie-in with current/last played song
 Modify strings for tab search
+Change hyphen eating to leave a space
 Add contingency for no hits
 
 Completed:
